@@ -67,9 +67,6 @@ function LoginPage() {
   if (error) {
     toast.error(error.message || "Google sign-in failed");
     setLoading(false);
-  }
-};
-    }
   };
 
   return (
