@@ -56,17 +56,20 @@ function LoginPage() {
   };
  const google = async () => {
   setLoading(true);
+  const google = async () => {
+    setLoading(true);
 
-  const { error } = await supabase.auth.signInWithOAuth({
-    provider: "google",
-    options: {
-      redirectTo: `${window.location.origin}/dashboard`,
-    },
-  });
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: `${window.location.origin}/dashboard`,
+      },
+    });
 
-  if (error) {
-    toast.error(error.message || "Google sign-in failed");
-    setLoading(false);
+    if (error) {
+      toast.error(error.message || "Google sign-in failed");
+      setLoading(false);
+    }
   };
 
   return (
