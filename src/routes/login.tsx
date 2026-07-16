@@ -54,8 +54,6 @@ function LoginPage() {
       setLoading(false);
     }
   };
- const google = async () => {
-  setLoading(true);
   const google = async () => {
     setLoading(true);
 
