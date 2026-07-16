@@ -1,0 +1,16 @@
+# Her Guardian 2.0
+
+> AI-powered personal safety app for women: one-tap SOS, live GPS tracking, AI threat detection, wearable support, and trusted-contact alerts. Built in Chennai, India.
+
+Her Guardian 2.0 is a safety ecosystem for women students, working professionals, and solo travellers. It combines real-time GPS tracking, AI-based threat detection, instant SOS alerts to up to five trusted contacts, and wearable integration to deliver rapid emergency response.
+
+## Pages
+
+- [Home](/): Project overview, features, SMART goals, team, and contact.
+- [Pricing](/pricing): Plans and pricing for individuals and institutions.
+- [Sign in](/login): Account access for registered users.
+
+## Optional
+
+- [Safe Route](/safe-route): Curated safer routes across major Indian cities.
+- [Unsafe Zones](/unsafe-zones): Community-reported dangerous location alerts.

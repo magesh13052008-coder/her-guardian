@@ -1,0 +1,1 @@
+CREATE POLICY "Owner can delete alerts" ON public.sos_alerts FOR DELETE TO authenticated USING (auth.uid() = user_id);

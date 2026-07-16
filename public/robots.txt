@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /debug
+Disallow: /track/
+Disallow: /payment/
+
+Sitemap: https://https-her-guardian-app-com.lovable.app/sitemap.xml
