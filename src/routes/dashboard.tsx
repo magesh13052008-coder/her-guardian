@@ -8,12 +8,7 @@ import { NotificationBell } from "@/components/safety/NotificationBell";
 import { LiveTrackingCard } from "@/components/safety/LiveTrackingCard";
 import { ThreatDetectorCard } from "@/components/safety/ThreatDetectorCard";
 import { useI18n } from "@/lib/i18n";
-
 export const Route = createFileRoute("/dashboard")({
- export const Route = createFileRoute("/dashboard")({
-  component: Dashboard,
-    if (error || !data.user) throw redirect({ to: "/login" });
-  },
   component: Dashboard,
   head: () => ({
     meta: [
