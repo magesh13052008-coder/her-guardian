@@ -10,8 +10,9 @@ import { ThreatDetectorCard } from "@/components/safety/ThreatDetectorCard";
 import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/dashboard")({
-  beforeLoad: async () => {
-    const { data, error } = await supabase.auth.getUser();
+ beforeLoad: async () => {
+  if (typeof window === "undefined") return;
+  const { data, error } = await supabase.auth.getUser();
     if (error || !data.user) throw redirect({ to: "/login" });
   },
   component: Dashboard,
