@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useNavigate, redirect } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Shield, Siren, MapPin, Users, LogOut, Plus, Trash2, Camera, Loader2, Phone, Clock, AlertTriangle, CheckCircle2, HelpCircle, RefreshCw, X, Send, Ban } from "lucide-react";
 import { toast } from "sonner";
@@ -10,9 +10,8 @@ import { ThreatDetectorCard } from "@/components/safety/ThreatDetectorCard";
 import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/dashboard")({
- beforeLoad: async () => {
-  if (typeof window === "undefined") return;
-  const { data, error } = await supabase.auth.getUser();
+ export const Route = createFileRoute("/dashboard")({
+  component: Dashboard,
     if (error || !data.user) throw redirect({ to: "/login" });
   },
   component: Dashboard,
