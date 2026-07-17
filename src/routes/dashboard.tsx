@@ -304,7 +304,7 @@ function Dashboard() {
           return { ...d, status: r.ok ? "confirmed" : "failed", error: r.error, errorCode: r.code };
         }),
       );
-
+if (typeof window === "undefined") return;
       const okCount = results.filter((r) => r.ok).length;
       const failCount = results.length - okCount;
       // Suppress unused-helper warning while keeping the bridge import side-effect ready for native builds.
